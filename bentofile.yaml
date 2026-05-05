@@ -1,0 +1,14 @@
+service: "src.service:TitanicService" # Đường dẫn tới object service trong file service.py
+labels:
+  owner: "tiennx"
+  project: "titanic-ai"
+include:
+  - "src/service.py"
+  - "src/models/model.py"   # Quan trọng: Phải bao gồm cả định nghĩa class model
+python:
+  packages:
+    - torch
+    - joblib
+    - scikit-learn
+    - numpy
+    - pandas

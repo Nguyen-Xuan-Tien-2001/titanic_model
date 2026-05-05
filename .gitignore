@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.egg-link
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+env_ai/
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Distribution / packaging
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ML / Data
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.tsv
+*.parquet
+*.pkl
+*.joblib
+
+# Model artifacts
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.onnx
+models/*.pb
+models/scaler.joblib
+
+# BentoML
+bentoml/
+.bentoml/
+
+# Logs
+logs/
+*.log
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Configs with secrets
+configs/secrets.yaml
