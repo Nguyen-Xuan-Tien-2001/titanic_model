@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: titanic-predictor
+spec:
+  replicas: 3 # Chạy 3 bản sao để dự phòng
+  selector:
+    matchLabels:
+      app: titanic
+  template:
+    metadata:
+      labels:
+        app: titanic
+    spec:
+      containers:
+      - name: bento-container
+        image: titanic_service:latest # Image bạn đã build từ BentoML
+        ports:
+        - containerPort: 3000
